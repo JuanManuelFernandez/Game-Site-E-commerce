@@ -1,0 +1,126 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+
+body {
+  margin: 0;       /* elimina márgenes por defecto */
+  padding: 0;      /* elimina padding por defecto */
+  height: 100%;    /* asegura que ocupen toda la pantalla */
+  width: 100%;
+  font-family: 'Poppins', sans-serif;
+  background-color: black;
+}
+
+/*Navbar*/
+
+.Navbar {
+  display: flex;
+  justify-content: center;
+}
+.ListaNav {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+.ItemsNav {
+  color: #ffff;
+  text-decoration: none;
+}
+
+/*Fin Navbar*/
+.ContenedorJuegoNuevo {
+  background-image: url("Assets/Banner.jpg");
+  background-position: 50% 17%;   /* control fino: horizontal vertical */
+  background-size: cover;
+  min-height: 200px;
+  padding: 20px 20px;
+}
+
+.ContenedorTitulos{
+  display: flex;
+  flex-direction: column;
+  margin-left: 20px;
+}
+
+.TituloNuevoLanzamiento {
+  color: white;
+  font-size: 2rem;
+}
+
+.TituloJuego {
+  color: white;
+  font-size: 1.5rem;
+}
+
+.ContenedorBotones {
+  display: flex;
+  align-items: row;
+  margin-top: 50px;
+  margin-left: 20px;
+  gap: 20px;
+}
+
+.BtnAgregar {
+  display: flex;
+  align-items: center;
+  color: #ffff;
+  font-weight: bold;
+  width: 150px;
+  height: 50px;
+  border: 1px solid #2222;
+  border-radius: 10px;
+  background-color: rgb(255, 153, 0);
+}
+
+.IconoCarrito {
+  width: 20px;
+  height: 20px;
+}
+
+.BtnLista {
+  display: flex;
+  align-items: center;
+  color: #ffff;
+  font-weight: bold;
+  width: 150px;
+  height: 50px;
+  border: 1px solid #2222;
+  border-radius: 10px;
+  background: #807c7c8a;
+}
+
+.IconoCorazon {
+  width: 20px;
+  height: 18px;
+}
+
+.ContenedorPlataformas {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.Plataformas {
+  display: flex;
+  flex-direction: row;
+  background-color: #64727c;
+  border: 1px solid #2222;
+  border-radius: 20px;
+  gap: 15px;
+}
+
+.BtnPlataforma {
+  background-color: transparent;
+  display: flex;
+  align-items: center;
+  border: 1px solid transparent;
+  border-radius: 40px;
+  gap: 15px;
+}
+
+.Icono {
+  width: 40px;
+  height: 40px;
+}
+
+.SpanPlataforma {
+  color: #ffff;
+}
