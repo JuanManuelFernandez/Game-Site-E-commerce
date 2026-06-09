@@ -6,7 +6,7 @@ body {
   height: 100%;    /* asegura que ocupen toda la pantalla */
   width: 100%;
   font-family: 'Poppins', sans-serif;
-  background-color: black;
+  background-color: rgb(241, 237, 237);
 }
 
 /*Navbar*/
@@ -15,7 +15,6 @@ body {
   display: flex;
   justify-content: center;
   position: relative;
-  background: linear-gradient(90deg, rgb(36, 35, 36), rgb(58, 57, 58), rgb(124, 123, 123))
 }
 
 .ListaNav {
@@ -28,7 +27,7 @@ body {
   display: flex;
   align-items: center;
   position: absolute;
-  left: 20px;
+  left: 60px;
   gap: 10px;
 }
 
@@ -38,18 +37,24 @@ body {
 }
 
 .TituloMarca {
-  color: #ffff;
+  color: #000000;
   font-weight: bold;
+  font-size: 1.8rem;
 }
 
 .ContenedorBuscar {
   display: flex;
   align-items: center;
   gap: 5px;
+  height: 50px;
+  width: 350px;
+  background-color: rgb(241, 237, 237);
+  border-radius: 15px;
 }
 
 .InputBuscar {
   border: 1px solid #2222;
+  width: 230px;
   border-radius: 15px;
   padding: 10px 30px;
 }
@@ -62,20 +67,21 @@ body {
 }
 
 .IconoBuscar {
-  width: 50px;
-  height: 50px;
+  width: 40px;
+  height: 40px;
 }
 
 .ContenedorCuenta {
   display: flex;
   align-items: center;
   position: absolute;
-  right: 20px;
+  right: 80px;
   gap: 20px;
 }
 
 .LinkCuenta {
-  color: white;
+  color: rgb(0, 0, 0);
+  font-weight: bold;
   text-decoration: none;
 }
 
@@ -86,10 +92,21 @@ body {
 /*Fin Navbar*/
 .ContenedorJuegoNuevo {
   background-image: url("Assets/Banner.jpg");
-  background-position: 50% 17%;   /* control fino: horizontal vertical */
+  background-position: 50% 17%;
   background-size: cover;
   min-height: 200px;
   padding: 20px 20px;
+  max-width: 1440px;   
+  margin: 0 auto;      
+  box-sizing: border-box; 
+  margin-top: 10px;
+
+  border: 3px solid transparent;
+  border-radius: 20px; 
+  background-clip: padding-box; 
+  outline: 3px solid transparent; 
+  
+  position: relative;
 }
 
 .ContenedorTitulos{
@@ -98,18 +115,48 @@ body {
   margin-left: 20px;
 }
 
+.ContenedorTitulosArriba{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 20px;
+}
+
 .TituloNuevoLanzamiento {
+  text-align: center;
   color: white;
-  background-color: #2222;
+  background-color: rgb(255, 153, 0);
   width: 200px;
-  border: 2px solid red;
   border-radius: 10px;
   font-size: 1rem;
+}
+
+.SpanTituloPlataformas {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  border-radius: 10px;
+  width: 120px;
+  height: 27px;
+  background-color: #505152;
+  gap: 15px;
+}
+
+.IconoSpan {
+  width: 20px;
+  height: 20px;
 }
 
 .TituloJuego {
   color: white;
   font-size: 2rem;
+}
+
+.TituloPrecio {
+  color: #ffff;
+  font-size: 1.2rem;
+  font-weight: bold;
 }
 
 .ContenedorBotones {
@@ -162,10 +209,14 @@ body {
 
 .Plataformas {
   display: flex;
+  justify-content: center;
+  align-items: center;
   flex-direction: row;
-  background-color: #64727c;
+  background-color: #ffffff;
   border: 1px solid #2222;
   border-radius: 20px;
+  width: 500px;
+  height: 50px;
   gap: 15px;
 }
 
@@ -184,5 +235,31 @@ body {
 }
 
 .SpanPlataforma {
-  color: #ffff;
+  color: #000000;
+}
+
+/*Juegos Destacados*/
+
+.ContenedorJuegosDestacados {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 50px;
+}
+
+.TituloJuegosDestacados {
+  color: rgb(0, 0, 0);
+}
+
+.ContenedorRecuadrosJuegosDestacados {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+}
+
+.ImgJuegoDestacado {
+  border-radius: 20px;
+  width: 300px;
+  height: 150px;
 }
