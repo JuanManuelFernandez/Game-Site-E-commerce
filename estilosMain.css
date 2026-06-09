@@ -6,7 +6,7 @@ body {
   height: 100%;    /* asegura que ocupen toda la pantalla */
   width: 100%;
   font-family: 'Poppins', sans-serif;
-  background-color: rgb(241, 237, 237);
+  background: url("Assets/FondoMain.png")
 }
 
 /*Navbar*/
@@ -15,6 +15,7 @@ body {
   display: flex;
   justify-content: center;
   position: relative;
+  margin-top: 10px;
 }
 
 .ListaNav {
@@ -32,12 +33,12 @@ body {
 }
 
 .IconoMarca {
-  width: 50px;
-  height: 50px;
+  width: 80px;
+  height: 80px;
 }
 
 .TituloMarca {
-  color: #000000;
+  color: #ffffff;
   font-weight: bold;
   font-size: 1.8rem;
 }
@@ -80,7 +81,7 @@ body {
 }
 
 .LinkCuenta {
-  color: rgb(0, 0, 0);
+  color: rgb(255, 255, 255);
   font-weight: bold;
   text-decoration: none;
 }
@@ -249,7 +250,8 @@ body {
 }
 
 .TituloJuegosDestacados {
-  color: rgb(0, 0, 0);
+  color: rgb(255, 255, 255);
+  font-size: 1.8rem;
 }
 
 .ContenedorRecuadrosJuegosDestacados {
