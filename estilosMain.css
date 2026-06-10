@@ -6,7 +6,11 @@ body {
   height: 100%;    /* asegura que ocupen toda la pantalla */
   width: 100%;
   font-family: 'Poppins', sans-serif;
-  background: url("Assets/FondoMain.png")
+  background: url("Assets/FondoMain.png");
+  background-size: cover;       /* cubre toda el área */
+  background-position: center;  /* centra la imagen */
+  background-repeat: no-repeat; /* evita que se repita */
+  background-attachment: fixed; /* opcional: efecto parallax */
 }
 
 /*Navbar*/
@@ -33,8 +37,8 @@ body {
 }
 
 .IconoMarca {
-  width: 80px;
-  height: 80px;
+  width: 130px;
+  height: 130px;
 }
 
 .TituloMarca {
@@ -80,14 +84,14 @@ body {
   gap: 20px;
 }
 
-.LinkCuenta {
-  color: rgb(255, 255, 255);
-  font-weight: bold;
-  text-decoration: none;
+.BtnCuenta {
+  background: none;
+  border: none;
 }
 
-.L {
-  list-style: none;
+.IconoUser {
+  width: 140px;
+  height: 80px;
 }
 
 /*Fin Navbar*/
@@ -216,7 +220,7 @@ body {
   background-color: #ffffff;
   border: 1px solid #2222;
   border-radius: 20px;
-  width: 500px;
+  width: 300px;
   height: 50px;
   gap: 15px;
 }
@@ -233,10 +237,6 @@ body {
 .Icono {
   width: 40px;
   height: 40px;
-}
-
-.SpanPlataforma {
-  color: #000000;
 }
 
 /*Juegos Destacados*/
@@ -262,6 +262,6 @@ body {
 
 .ImgJuegoDestacado {
   border-radius: 20px;
-  width: 300px;
-  height: 150px;
+  width: 270px;
+  height: 190px;
 }
