@@ -1,0 +1,92 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+
+body {
+  margin: 0;       /* elimina márgenes por defecto */
+  padding: 0;      /* elimina padding por defecto */
+  height: 100%;    /* asegura que ocupen toda la pantalla */
+  width: 100%;
+  font-family: 'Poppins', sans-serif;
+  background: url("Assets/FondoMain.png");
+  background-size: cover;       /* cubre toda el área */
+  background-position: center;  /* centra la imagen */
+  background-repeat: no-repeat; /* evita que se repita */
+  background-attachment: fixed; /* opcional: efecto parallax */
+}
+
+.ContenedorLogo {
+    display: flex;
+    justify-content: center;
+}
+
+.LogoGameSite {
+    width: 400px;
+    height: 400px;
+}
+
+.ContenedorLogBox {
+    display: flex;
+    justify-content: center;
+}
+
+.LogBox {
+    background-color: #22222296;
+    padding: 0px 50px 50px 50px; 
+    text-align: center;
+    border: 1px solid #000000;
+    border-radius: 10px;
+    overflow: hidden; 
+}
+
+.ContenedorTitulo {
+    background-color: black;
+    padding: 1px;
+    margin-bottom: 20px;
+    margin-left: -50px;  
+    margin-right: -50px; 
+}
+
+.TituloInicioSesion {
+    background: linear-gradient(90deg, #8709fc, rgb(153, 11, 235), #ff2d78);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text
+}
+
+.ContenedorInputUser {
+    display: flex;
+    flex-direction: column;
+}
+
+.ContenedorInputPass {
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+}
+
+.Spans {
+    color: #ffff;
+}
+
+.Inputs {
+    color: #ffff;
+    padding: 10px;
+    width: 200px;
+    background-color: rgb(61, 61, 61);
+    border: 1px solid #000000;
+}
+
+.ContenedorRegistrate {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.SpanRegistro {
+    color: #ffff;
+    font-size: 0.9rem;
+}
+
+.LinkRegistro {
+    font-size: 0.8rem;
+    color: #a309fc;
+}
