@@ -23,7 +23,7 @@ body {
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    margin-top: 10%;
+    margin-top: 5%;
     gap: 10%;
 }
 
@@ -42,7 +42,7 @@ body {
 
 .LogBox {
     background-color: #22222296;
-    padding: 0px 50px 50px 50px; 
+    padding: 0px 50px 20px 50px; 
     text-align: center;
     border: 1px solid #000000;
     border-radius: 10px;
@@ -63,13 +63,8 @@ body {
 
 .ContenedorInputUser {
     display: flex;
-    flex-direction: column;
-}
-
-.ContenedorInputPass {
-    display: flex;
-    flex-direction: column;
-    margin-top: 20px;
+    justify-content: center;
+    margin-bottom: 20px;
 }
 
 .Spans {
